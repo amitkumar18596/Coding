@@ -1,5 +1,4 @@
-public class Next Permutation {
-    //{ Driver Code Starts
+//{ Driver Code Starts
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
@@ -16,9 +15,11 @@ class Solution {
         //Identify the rightmost element that is smaller than its next element. This is called pivot element
         int pivot = -1;
         for(int i=n-2;i>=0;i--){
-            if(arr[i] < arr[i+1])
+            if(arr[i] < arr[i+1]){
                 pivot = i;
                 break;
+            }
+                
         }
         
         //If Pivot doesn't exist then reverse the whole array and that's the resultant next permutation
@@ -86,4 +87,3 @@ public class Main {
     }
 }
 // } Driver Code Ends
-}
